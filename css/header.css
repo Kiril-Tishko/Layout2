@@ -1,0 +1,103 @@
+/* header style */
+html, body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{width: 7px;}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+h1, h2, h3, h4, h5, ul {
+	margin: 0;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style-type: none; 
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 5px;
+}
+
+::selection {
+	background: #ff2b4aab;
+	color: #fff;
+}
+
+
+
+
+/*	HEADER	*/
+header {
+	height: 100vh;
+	position: relative;
+	background: url(img/intro.jpg) center center / cover no-repeat rgba(118,118,118,.48);
+	background-blend-mode: darken;
+	background-attachment: fixed;
+	color: #fff;
+}
+
+.header-wrap {
+	width: 540px;
+	min-height: 170px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+@media (max-width: 600px) {
+	.header-wrap {
+		width: 90%;
+	}
+
+	.header-wrap h1 {
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+.header-wrap h1 {
+	font-size: 65px;
+	letter-spacing: 6px;
+	padding: 25px 0;
+	text-transform: uppercase;
+	border-top: solid 3px rgba(255,255,255,.5);
+	border-bottom: solid 3px rgba(255,255,255,.5);
+	font-family: 'Myriad Pro Bold';
+
+}
+
+@media (max-width: 400px) {
+	.header-wrap h1 {
+		font-size: 55px;
+	}
+}
+
+header h2 {
+	font-size: 24px;
+	font-style: italic;
+	font-weight: normal;
+	padding: 25px 0;
+	color: rgba(255,255,255,.7);
+	font-family: Myriad Pro Italic;
+}
